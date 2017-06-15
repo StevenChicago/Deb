@@ -4,7 +4,9 @@
 #
 
 set -v
+
 apt-get -y update
+
 apt-get install -y ntpdate
 apt-get install -y squid3 apache2-utils
 
@@ -27,3 +29,5 @@ EOF
 echo "IP ADDRESS"
 
 curl ifconfig.co
+
+#Be sure to shutdown/terminate your VM after you are done!
